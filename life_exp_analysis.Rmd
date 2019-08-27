@@ -1,0 +1,22 @@
+---
+title: "Examine lLife Expectancy"
+author: "Ai Xiyao"
+date: "2019/8/27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Abstract
+
+Here, we examine the cool life expectancy plot.
+
+#Analysis
+
+```{r}
+
+```
+
+
