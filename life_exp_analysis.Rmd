@@ -7,15 +7,27 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+install.packages("gapminder")
 ```
 
 # Abstract
 
 Here, we examine the cool life expectancy plot.
 
-#Analysis
+#Life Expextancy Analysis
 
 ```{r}
+library(gapminder)
+library(tidyverse)
+data("gapminder_unfiltered")
+gapminder_unfiltered %>%
+  group_by(year)%>%
+  filter(lifeExp == max(lifeExp))%>%
+  select(country, lifeExp, year)%>%
+  arrange(year) ->
+  sumdat
+  
+  
 
 ```
 
