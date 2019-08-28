@@ -16,6 +16,8 @@ Here, we examine the cool life expectancy plot.
 
 #Life Expextancy Analysis
 
+We will first clean the data
+
 ```{r}
 library(gapminder)
 library(tidyverse)
@@ -31,4 +33,5 @@ gapminder_unfiltered %>%
 
 ```
 
+We will now recreate the plot from Oeppen and Vaupel(2002).
 
