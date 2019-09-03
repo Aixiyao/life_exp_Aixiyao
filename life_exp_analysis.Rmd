@@ -37,10 +37,23 @@ We will now recreate the plot from Oeppen and Vaupel(2002).
 
 
 ```{r}
+library(ggplot2)
+ggplot(sumdat, mapping = aes(x = year, y = lifeExp)) + 
+  geom_point(mapping = aes(color = country)) + 
+  geom_smooth(se = FALSE, method = "lm") + 
+  geom_point(shape = 1) + 
+  xlab("Year") + 
+  ylab("Maximum Life Expectancy") + 
+  theme_bw()      # 背景变白
 
 ```
 
 ```{r}
+ggplot(sumdat, mapping = aes(x = year, y = lifeExp)) + 
+  geom_point(mapping = aes(color = country)) + 
+  geom_smooth(se = F, method = "lm") +
+  theme_bw()
+
 
 ```
 
